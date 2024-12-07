@@ -1,0 +1,18 @@
+[project]
+name = "simple-typer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Andreas Geyer", email = "andreas@qbitone.de" }]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+simple-typer = "simple_typer:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pyright>=1.1.390", "pytest-cov>=6.0.0", "pytest>=8.3.4"]
