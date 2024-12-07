@@ -1,0 +1,10 @@
+name: "Install uv"
+description: "Setup uv for all jobs"
+
+runs:
+  using: composite
+  steps:
+    - name: Install uv
+      uses: astral-sh/setup-uv@v4
+      with:
+        version: "latest"
